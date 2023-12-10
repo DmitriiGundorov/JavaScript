@@ -26,7 +26,7 @@
 alert("----------- Задание № 4 -----------");
 const number = +prompt("Введите положительное целое число", "0");
 if (number >= 0) {
-  const hundred = Math.trunc(number / 100);
+  const hundred = Math.trunc(number / 100) % 10;
   const ten = Math.trunc(number / 10) % 10;
   const one = number % 10;
   alert(
