@@ -14,4 +14,17 @@
 число 32.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+alert("----------- Задание № 3 -----------");
+const dayNumber = +prompt("Введите целое число в интервале [1, 32)", "1");
+if (dayNumber < 1 || dayNumber > 31) {
+  alert("Неверное значение");
+} else if (dayNumber < 11) {
+  const decade = 1;
+  alert(`Число ${dayNumber} попадает в ${decade} декаду месяца.`);
+} else if (dayNumber > 20) {
+  const decade = 3;
+  alert(`Число ${dayNumber} попадает в ${decade} декаду месяца.`);
+} else {
+  const decade = 2;
+  alert(`Число ${dayNumber} попадает в ${decade} декаду месяца.`);
+}
