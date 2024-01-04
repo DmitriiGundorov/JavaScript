@@ -17,7 +17,7 @@
 console.log('\n', "----------- Задание № 3 -----------");
 const arr = [];
 let summa = 0;
-let resultMin = 11;
+let resultMin = 1/0;
 const newArr = [];
 for (let i = 0; i < 5; i++) {
   arr.push(Math.floor(Math.random() * 10));
